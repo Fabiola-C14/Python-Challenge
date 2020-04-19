@@ -1,25 +1,32 @@
+#Module. Importing csv file
 import os
 import csv
 
+#Set file path
 csvpath=os.path.join('.', 'Resources', 'election_data.csv')
 
+#Open and read the file
 with open (csvpath) as csvfile:
     csvreader=csv.reader(csvfile, delimiter=',')
+    #Skip the header
     csvheader=next(csvfile)
+     #Create Variables
     voter_id=[]
     vote=[]
     candidates=[]
     votes=[]
-
+    #Calculate the total number of votes
     for rows in csvreader:
         voter_id.append(rows[0])
         total_votes=len(voter_id)
 
+    #Create list for candidates and votes
     candidates=["Khan", "Correy", "Li", "O'Tooley"]
     votes=[2218231, 704200, 492940, 105630]
 
     results_strings=[]
 
+    #Calculate vote and percentage for all candidates with constructed string
     for candidate in candidates:
         candidate_index=candidates.index(candidate)
         vote=votes[candidate_index]
@@ -27,10 +34,12 @@ with open (csvpath) as csvfile:
         result=f"{candidate}: {vote_percent}% {vote}"
         results_strings.append(result)
 
+#Identify the winner with the maximum votes
 winner_max=max(votes)
 winner_index=votes.index(winner_max)
 winner=candidates[winner_index]
 
+#Print total votes, and candidatets with their votes count and vote percentage
 print("Election Results")
 print("----------------------")
 print(f"Total Votes: {total_votes}")
