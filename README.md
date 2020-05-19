@@ -11,12 +11,12 @@ In this challenge a Python script was created to analyze financial records, and 
 * The greatest decrease in losses (date and amount) over the entire period
 
 Financial Analysis
-----------------------------
-Total Months: 86
-Total: $38382578
+'----------------------------'
+Total Months: 86/n
+Total: $38382578/n
 Average  Change: $-2315.12
-Greatest Increase in Profits: Feb-2012 ($1926159)
-Greatest Decrease in Profits: Sep-2013 ($-2196167)
+Greatest Increase in Profits: Feb-2012 ($1926159)/n
+Greatest Decrease in Profits: Sep-2013 ($-2196167)/n
 
 
 ## PyPoll
@@ -28,15 +28,4 @@ In this challenge, a Python script was created to analyze the votes and calculat
 * The total number of votes each candidate won
 * The winner of the election based on popular vote
 
-Election Results
--------------------------
-Total Votes: 3521001
--------------------------
-Khan: 63.000% (2218231)
-Correy: 20.000% (704200)
-Li: 14.000% (492940)
-O'Tooley: 3.000% (105630)
--------------------------
-Winner: Khan
--------------------------
 
