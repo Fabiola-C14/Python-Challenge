@@ -1,14 +1,20 @@
 # Python-Challenge
 
-The PyBank analysis includes a summary of the following data from the budget file:
- total count of profit/loss months,
- total profit amount,
- the monthly average profit/loss change,
- the month and year with the greatest increase in profit,
- the month and year with the greatest decrease in profit.
- 
- The PyPoll analysis includes a summary of the following data from the election file:
- total number of votes,
- the total number of votes for each candidate,
- the total percentage of votes for each candidate,
- the candidate that won.
+## PyBank
+
+* In this challenge a Python script was created to analyze financial records, and calculate the following data:
+* The total number of months included in the dataset
+* The net total amount of Profit/Losses over the entire period
+* The average changes in Profit/Losses over the entire period
+* The greatest increase in profits (date and amount) over the entire period
+* The greatest decrease in losses (date and amount) over the entire period
+
+## PyPoll
+
+* In this challenge, a Python script was created to analyze the votes and calculate the following:
+* The total number of votes cast
+* A complete list of candidates who received votes
+* The percentage of votes each candidate won
+* The total number of votes each candidate won
+* The winner of the election based on popular vote
+
