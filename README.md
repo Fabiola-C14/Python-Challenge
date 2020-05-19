@@ -1,5 +1,6 @@
 # Python-Challenge
 
+
 ## PyBank
 
 In this challenge a Python script was created to analyze financial records, and calculate the following data:
@@ -8,6 +9,7 @@ In this challenge a Python script was created to analyze financial records, and 
 * The average changes in Profit/Losses over the entire period
 * The greatest increase in profits (date and amount) over the entire period
 * The greatest decrease in losses (date and amount) over the entire period
+
 
 ## PyPoll
 
