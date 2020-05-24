@@ -32,7 +32,7 @@ with open(csvpath) as csvfile:
         Gains_Change.append((Profit[n+1])- (Profit[n]))
 
         #Calculate the average of the Profit/Loss changes.
-        Average_Change=sum(Gains_Change)/len(Gains_Change)  
+        Average_Change=round(sum(Gains_Change)/len(Gains_Change),2)  
         
         #Calculate greatest increase in Profit 
         Profit_Increase=max(Gains_Change)
@@ -45,8 +45,8 @@ with open(csvpath) as csvfile:
         Month_Decrease=Gains_Change.index(Profit_Decrease)
 
         #Assign date to greatest profit increase and decrease
-        Greatest_Month=Date_Month[Month_Increase]
-        Decrease_Month=Date_Month[Month_Decrease]
+        Greatest_Month=Date_Month[Month_Increase + 1]
+        Decrease_Month=Date_Month[Month_Decrease + 1]
 
 #Create printout
 print("Financial Analysis")

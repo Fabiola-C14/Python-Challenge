@@ -12,17 +12,19 @@ with open (csvpath) as csvfile:
     csvheader=next(csvfile)
      #Create Variables
     voter_id=[]
-    vote=[]
     candidates=[]
-    votes=[]
+
+    winner_max=0
+    winner= ""
     #Calculate the total number of votes
     for rows in csvreader:
         voter_id.append(rows[0])
         total_votes=len(voter_id)
-
-    #Create list for candidates and votes
-    candidates=["Khan", "Correy", "Li", "O'Tooley"]
-    votes=[2218231, 704200, 492940, 105630]
+    
+        
+    #Calculate vote_ and percentage for all candidates with constructed string
+        candidates=["Khan", "Correy", "Li", "O'Tooley"]
+        votes=[2218231, 704200, 492940, 105630]
 
     results_strings=[]
 
@@ -63,6 +65,9 @@ with open(budget_extract, 'w') as outfile:
     outfile.write("----------------------\n")
     outfile.write(f"Winner: {winner}\n")
     outfile.write("----------------------\n")
+
+
+
 
 
 
